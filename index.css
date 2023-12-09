@@ -1,0 +1,390 @@
+
+/* Loading the list used with @import */
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,500;1,400&family=Open+Sans:wght@500&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+}
+
+html{
+    font-size:10px;
+}
+/* https://www.canva.com/p/templates/EAE7qqC-rL8-gray-simple-profile-resume/ */
+
+ /* background-color: #323232; */
+    /* #d9d9d9 */
+    /* ##ebebec */
+    /* #fdfcf8 --> text color for Professional Color */
+    /*#181818 --> text color*/
+
+/* Fonts */
+@font-face{
+    font-family: 'Poppins';
+    src:url("./public/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src:url("./public/fonts/Poppins/Poppins-Light.ttf");
+}
+
+@font-face{
+    font-family: 'Poppins Italics';
+    src:url("./public/fonts/Poppins/Poppins-ExtraLightItalic.ttf");
+    font-style: italic;
+    font-weight:400;
+}
+
+@font-face{
+    font-family: 'Roboto Regular';
+    src:url("./public/fonts/Roboto/Roboto-Light.ttf");
+}
+
+
+.roboto-sans{
+    font-family: 'Roboto Regular', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.poppins-bold{
+    font-family: 'Popins',sans-serif;
+}
+
+.poppins-italics{
+    font-family: 'Poppins Italics',sans-serif;
+}
+
+.afacad{
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
+}
+
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size:1.2rem;
+}
+
+.poppins-light{
+    font-family:'Poppins Light',sans-serif;
+    font-weight: 500;
+}
+
+/* Fonts-end */
+
+/* Most Used */
+body{
+   background-color: black;
+}
+
+#main{
+    max-width: 768px;
+    margin:0 auto;
+    background-color: #e3e3e3;
+}
+
+.section{
+    padding:2rem 0;
+}
+
+.container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bgrounded-heading{
+    text-transform: uppercase;
+    padding: 0.4rem 1rem;
+    word-spacing: 0.6rem;
+    width: 50%;
+    border-top-right-radius:1rem;
+    border-bottom-right-radius:1rem;
+    margin:1.6rem 0;
+}
+
+.bgrounded-heading-black{
+    background-color: #363636;
+    color: white;
+}
+
+.bgrounded-heading-white{
+    background-color: #e3e3e3;
+    color: black;
+}
+/* Most used end */
+
+#resume{
+    width:100%;
+
+}
+
+.heading-container{
+    background-color: #d9d9d9;
+    padding: 3rem 0;
+}
+
+.top-side-shape{
+    height: 2rem;
+    width: 35%;
+    max-width: 15rem;
+    margin-top:-3rem;
+    margin-left:auto;
+    margin-right: 0;
+    background-color: #363636 ;
+    border-bottom-left-radius: 50px;
+}
+
+.name-and-details{
+   padding:0 2rem; 
+}
+
+#name{
+    font-size:3.2rem;
+}
+
+#profession{
+    margin-bottom:2.4rem;
+}
+
+
+
+.list-item{
+    list-style-type: disc;
+    margin-left:1.6rem;
+    margin-bottom:1.6rem;
+}
+
+.company-details{
+    margin-bottom:1rem;
+}
+
+.seperator{
+    display: none;
+}
+
+
+.afacad.company-name,
+.afacad.seperator,
+.afacad.position,
+.afacad.timeframe,
+.afacad.skill-heading
+{
+    font-size: 1.4rem;
+}
+
+.position,
+.timeframe{
+    display: inline-block;
+}
+
+.timeframe{
+    font-style: italic;
+}
+
+
+.kr-title,.kr-list{
+    font-size:1.2rem;
+}
+
+.key-responsibility-section{
+    padding-right:1rem;
+}
+
+.kr-title{
+    margin-bottom: 0.8rem;
+}
+
+.kr-list{
+    list-style-type: disc;
+    margin-left:2rem;
+}
+
+.kr-list li{
+    margin-bottom: 0.6rem;
+}
+
+.skills{
+   margin-left:2rem;
+}
+
+
+.skill-section{
+    margin-bottom: 2rem;
+    padding-right:2rem;
+}
+
+.skill-list{
+    margin-top:0.8rem;
+    -moz-column-count: 3;
+    -moz-column-gap: 1.6rem;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1.6rem;
+    column-count: 4;
+    column-gap: 1.6rem;
+}
+
+.basic-details{
+    background-color:#363636;
+    color:white;
+    font-size:1rem;
+}
+
+.basic-details-section{
+    padding:0 2rem;
+}
+
+.section-heading-list{
+    list-style-type: disc;
+}
+
+.education-item{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.4rem;
+    align-items:center;
+    margin:0.8rem;
+}
+
+.education-item .degree::after{
+    content:"|";
+    margin:0 0.4rem;
+}
+
+.basic-details-section .details{
+    margin:0.8rem 0;
+}
+
+.basic-details-section .details::after,
+.basic-details-section .details::before{
+    content:'';
+    padding:1rem 0;
+}
+
+
+.icon-section{
+    color:white;
+    margin-right:1rem;
+}
+
+.link,
+.link:active{
+    color:white;
+    text-decoration: none;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.seeoff-section{
+    padding:1rem;
+    font-size:0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-link{
+    text-decoration: none;
+    margin:0 1rem;
+}
+.icon-link .bi{
+    color:black;
+    margin:0;
+}
+
+.random{
+    display: block;
+    margin:0.1rem 0;
+    color:black
+}
+
+.image-section{
+    display: none;
+}
+
+
+@media only screen and (min-width:578px) {
+    .heading-container{
+       height:14rem;
+    }
+
+    .heading-container .name-and-details{
+        max-width: 50%;
+        margin-top:1rem;
+        margin-left:auto;
+        margin-right:0;
+    }
+
+    .container{
+        flex-direction: row;
+    }
+
+    .experience-section{
+        order:2;
+        width:50%;
+    }
+
+    .basic-details{
+        width:30%;
+        margin-left:2rem;
+    }
+
+    .seeoff-section{
+        background-color: #d9d9d9;
+    }
+
+    .basic-details{
+        height: 100vh;
+        margin-top: -16rem;
+        border-top-left-radius:25px;
+        border-top-right-radius:25px;
+    }
+
+    .basic-details .acheivement{
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (min-width:578px) {
+    html{
+        font-size: 12px;
+    }    
+}
+
+/* Changelog container */
+
+.changelog-container{
+    color:white;
+    text-align: center;
+    padding:2rem;
+    width: 100%;
+}
+
+.changelog{
+    font-size: 3rem;
+}
+
+.log-list{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:2rem 0;
+}
+
+.log-header{
+    font-size: 2rem;
+    text-decoration: underline;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.logs{
+    font-size:1.2rem;
+}
