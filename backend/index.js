@@ -24,7 +24,8 @@ async function launchAndPrint(){
         await page.pdf({
             format:"A4",
             path:fileName,
-            printBackground:true,
+            margin:0,
+            printBackground:false,
         })
         await browser.close();
     }catch(e){

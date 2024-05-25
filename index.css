@@ -408,11 +408,15 @@ body{
 
 
 @media print{
+    body{
+        background-color: white;
+     }
+     
     @page {
         size: A4 portrait;
         margin: 0;
     }
-    
+
     .seeoff-section{
         display: none;
     }
