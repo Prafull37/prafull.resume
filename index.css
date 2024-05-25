@@ -7,9 +7,15 @@
     margin:0;
 }
 
+
 html{
     font-size:10px;
 }
+
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+  }
 /* https://www.canva.com/p/templates/EAE7qqC-rL8-gray-simple-profile-resume/ */
 
  /* background-color: #323232; */
@@ -85,6 +91,15 @@ body{
     background-color: #e3e3e3;
 }
 
+.enable-on-normal{
+    display: block;
+}
+
+.disable-on-normal{
+    display: none;
+}
+
+
 .section{
     padding:2rem 0;
 }
@@ -152,7 +167,7 @@ body{
 
 
 .list-item{
-    list-style-type: disc;
+    list-style-type: none;
     margin-left:1.6rem;
     margin-bottom:1.6rem;
 }
@@ -387,4 +402,74 @@ body{
 
 .logs{
     font-size:1.2rem;
+}
+
+
+
+
+@media print{
+    @page {
+        size: A4 portrait;
+        margin: 0;
+    }
+    
+    .seeoff-section{
+        display: none;
+    }
+
+    .enable-on-print{
+        display: block;
+    }
+
+    
+    .tcs-on-print{
+        margin-top:2rem;
+        page-break-before:always;
+    }
+
+    .disable-on-print{
+        display: none;
+    }
+
+    a[href]:after {
+        content: none !important;
+    }
+
+    .heading-container{
+        background-color: white;
+    }
+
+    /* .heading-container .name-and-details {
+        max-width: 50%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: 0;
+    } */
+
+    .container{
+        background-color: white;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .image-section{
+        display: none;
+    }
+
+    .basic-details{
+        width: 53%;
+        /* margin-top: -10rem;
+        margin-left:2rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px; */
+    }
+   
+
+    .skill-list{
+        column-count: 2;
+    }
+
+    .kr-list{
+        font-size: 1rem;
+    }
 }
