@@ -412,10 +412,6 @@ body{
         background-color: white;
      }
      
-    @page {
-        size: A4 portrait;
-        margin: 0;
-    }
 
     .seeoff-section{
         display: none;
@@ -425,11 +421,6 @@ body{
         display: block;
     }
 
-    
-    .tcs-on-print{
-        margin-top:2rem;
-        page-break-before:always;
-    }
 
     .disable-on-print{
         display: none;
