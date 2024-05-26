@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     // URL of the PDF file
-    const fileUrl = 'https://raw.githubusercontent.com/Prafull37/resume/file-download/backend/Prafull_React_Developer_Resume.pdf';
+    const fileUrl = 'https://raw.githubusercontent.com/Prafull37/resume/7853e0fd864c4be56cbc978516a7468a204c0ad8/backend/Prafull_React_Developer_Resume.pdf';
     // Name to save the downloaded file
     const fileName = 'Prafull_React_Developer_Resume.pdf';
 
